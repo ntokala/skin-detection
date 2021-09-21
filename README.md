@@ -1,2 +1,2 @@
 # skin-detection
-Utilize machine learning to determine the potential risk of skin lesions. 
+Utilize machine learning to predict the potential risk of skin lesions. 

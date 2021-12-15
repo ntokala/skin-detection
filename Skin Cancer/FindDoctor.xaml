@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Skin_Cancer.FindDoctor">
+    <ScrollView>
+        <StackLayout>
+            <Frame BackgroundColor="CornflowerBlue" Padding="24" CornerRadius="0">
+                <Label Text="Find Your Perfect Doctor" HorizontalTextAlignment="Center"
+                   TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Label Text="Here we have made it easy for you to find doctors in your area without all the stressful research. Click the link corresponding to you state, then the closet city, and browse the best doctors in you area for skin cancer."
+                   TextColor="Black" Padding="30,10,30,10" FontSize="17"/>
+
+            <Label Padding="156,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Alabama" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/alabama" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="169,0,100,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Alaska" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/alaska" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="166,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Arizona" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/arizona" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="156,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Arkansas" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/arkansas" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="156,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="California" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/california" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="160,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Colorado" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/colorado" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="145,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Connecticut" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/connecticut" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="160,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Delaware" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/delaware" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="105,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="District of Columbia" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/district-of-columbia" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="175,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Florida" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/florida" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="172,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Georgia" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/georgia" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="179,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Hawaii" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/hawaii" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="186,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Idaho" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/idaho" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="183,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Illinois" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/illinois" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="179,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Indiana" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/indiana" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="192,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Iowa" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/iowa" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="180,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Kansas" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/kansas" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="173,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Kentucky" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/kentucky" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="170,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Louisiana" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/louisiana" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="190,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Maine" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/maine" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="171,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Maryland" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/maryland" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="136,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Massachusetts" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/massachusetts" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="174,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Michigan" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/michigan" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="165,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Minnesota" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/minnesota" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="160,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Mississippi" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/mississippi" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="175,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Missouri" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/missouri" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="174,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Montana" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/montana" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="170,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Nebraska" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/nebraska" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="181,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Nevada" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/nevada" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="130,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="New Hampshire" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/new-hampshire" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="157,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="New Jersey" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/new-jersey" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="154,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="New Mexico" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/new-mexico" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="170,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="New York" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/new-york" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="140,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="North Carolina" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/north-carolina" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="148,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="North Dakota" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/north-dakota" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="195,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Ohio" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/ohio" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="165,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Oklahoma" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/oklahoma" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="180,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Oregon" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/oregon" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="150,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Pennsylvania" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/pennsylvania" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="150,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Rhode Island" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/rhode-island" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="141,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="South Carolina" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/south-carolina" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="147,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="South Dakota" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/south-dakota" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="161,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Tennessee" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/tennessee" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="189,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Texas" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/texas" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="197,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Utah" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/utah" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="175,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Vermont" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/vermont" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="183,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Virginia" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/virginia" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="160,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Washington" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/washington" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="155,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="West Virginia" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/west-virginia" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="171,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Wisconsin" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/wisconsin" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Padding="179,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Wyoming" TextColor="Blue" TextDecorations="Underline" FontSize="25">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                 CommandParameter="https://doctor.webmd.com/find-a-doctor/condition/skin-cancer/wyoming" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

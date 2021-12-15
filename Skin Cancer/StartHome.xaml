@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="Skin_Cancer.StartHome"
+             >
+    <ScrollView>
+        <StackLayout>
+
+            <Button Text="Logout" Clicked="Button_Clicked"/>
+
+            <Frame BackgroundColor="CornflowerBlue" Padding="24" CornerRadius="0">
+
+                <Label Text="Welcome to the Skin Cancer Awareness App" HorizontalTextAlignment="Center"
+                   TextColor="White" FontSize="36">
+                </Label>
+
+
+            </Frame>
+        
+        
+        
+            <Label Text="Start Diagnosis" FontSize="Title" Padding="30,10,30,10"/>
+            <Label Text="Welcome to our easy to use Skin Cancer diagnostic app. We have made it easy for you to receive an accurate skin cancer diagnosis, as well as consultation."
+               FontSize="16" Padding="30,0,30,0"/>
+
+            <Label Text="Skin cancer is one of the most common types of cancer in the entire world. By the age of 70, one in five Americans will have developed skin cancer. It is said that every hour there are two people who die from skin cancer in America. $8.1 billion are spent each year in efforts to treat skin cancer. These facts prove that skin cancer is a tremendous problem that needs solving. A stat exists that says there is a 99 percent 5-year survival rate for melanoma if detected early. From this, we understand that a viable solution is possible, which led us to pursue our software development project. "
+               FontSize="16" Padding="30,0,30,0"/>
+
+            <Label Text="Through navigation of the tabs below one can learn and become more aware of the common skin care cases. There is a functionality that allows for skin cancer diagnosis on the Upload page. From the Find a Doctor page one can locate the best doctors in the area for proper consultation. Lastly, general information pertaining to common skin cancer cases id provided on the Confirmed Cases page"
+               FontSize="16" Padding="30,0,30,0"/>
+
+            <Label Text="Begin you journey to skin cancer awareness, diagnosis, and consultation by navigating through the tabs. Enjoy!!"
+               FontSize="16" Padding="30,0,30,0"/>
+
+            <Label Text=""
+               FontSize="16" Padding="30,0,30,0"/>
+
+
+            <Label x:Name="currentUserID" HorizontalOptions="CenterAndExpand" Opacity="0"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

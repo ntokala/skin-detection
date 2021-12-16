@@ -1,14 +1,38 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Skin_Cancer.Compare">
     <ContentPage.Content>
-        <StackLayout>
-            <Frame BackgroundColor="CornflowerBlue" Padding="24" CornerRadius="0">
-                <Label Text="Confirmed/Common Cases" HorizontalTextAlignment="Center"
+        <ScrollView>
+            <StackLayout>
+                <Frame BackgroundColor="CornflowerBlue" Padding="24" CornerRadius="0">
+                    <Label Text="Confirmed/Common Cases" HorizontalTextAlignment="Center"
                    TextColor="White" FontSize="36"/>
-            </Frame>
-           
-        </StackLayout>
+                </Frame>
+
+                <Image Source="Melanoma.png" WidthRequest="100" HeightRequest="100"></Image>
+                <Button Text="Confirmed Case!" Clicked="Button_Clicked" BackgroundColor="Gray" TextColor="Black" />
+
+                <Image Source="BLK.png" WidthRequest="100" HeightRequest="100"></Image>
+                <Button Text="Confirmed Case!" Clicked="Button_Clicked_1" BackgroundColor="Gray" TextColor="Black" />
+
+                <Image Source="Dermatofibroma.png" WidthRequest="100" HeightRequest="100"></Image>
+                <Button Text="Confirmed Case!" Clicked="Button_Clicked_2" BackgroundColor="Gray" TextColor="Black" />
+
+                <Image Source="Basal.png" WidthRequest="100" HeightRequest="100"></Image>
+                <Button Text="Confirmed Case!" Clicked="Button_Clicked_3" BackgroundColor="Gray" TextColor="Black" />
+
+                <Image Source="Actinic.png" WidthRequest="100" HeightRequest="100"></Image>
+                <Button Text="Confirmed Case!" Clicked="Button_Clicked_4" BackgroundColor="Gray" TextColor="Black" />
+
+                <Image Source="Vascular.png" WidthRequest="100" HeightRequest="100"></Image>
+                <Button Text="Confirmed Case!" Clicked="Button_Clicked_5" BackgroundColor="Gray" TextColor="Black" />
+
+                <Image Source="Melanocytic.png" WidthRequest="100" HeightRequest="100"></Image>
+                <Button Text="Confirmed Case!" Clicked="Button_Clicked_6" BackgroundColor="Gray" TextColor="Black" />
+
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

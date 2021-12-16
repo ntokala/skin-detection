@@ -46,8 +46,8 @@ namespace Skin_Cancer
                 IRestResponse response = client.Execute(request);
 
                 var diffs = JsonConvert.DeserializeObject<Dictionary<string, int>>(response.Content);
-                var maxKeyOnValue = diffs.Where(c => c.Value.Equals("val1")).Select(x => x.Key).Max();
-                var maxK = diffs.FirstOrDefault(x => x.Value == diffs.Values.Max()).Key;
+                var maxKeyOnValue = diffs.Where(c => c.Value.Equals("val1")).Select(x => x.Key).Min();
+                var maxK = diffs.FirstOrDefault(x => x.Value == diffs.Values.Min()).Key;
 
                 Dictionary<string, string> com = new Dictionary<string, string>();
                 com.Add("akiec", "Actinic Keratoses and Intraepithelial Carcinoma / Bowen's Disease");
@@ -90,8 +90,8 @@ namespace Skin_Cancer
                 IRestResponse response = client.Execute(request);
 
                 var diffs = JsonConvert.DeserializeObject<Dictionary<string, int>>(response.Content);
-                var maxKeyOnValue = diffs.Where(c => c.Value.Equals("val1")).Select(x => x.Key).Max();
-                var maxK = diffs.FirstOrDefault(x => x.Value == diffs.Values.Max()).Key;
+                var maxKeyOnValue = diffs.Where(c => c.Value.Equals("val1")).Select(x => x.Key).Min();
+                var maxK = diffs.FirstOrDefault(x => x.Value == diffs.Values.Min()).Key;
 
                 Dictionary<string, string> com = new Dictionary<string, string>();
                 com.Add("akiec", "Actinic Keratoses and Intraepithelial Carcinoma / Bowen's Disease");

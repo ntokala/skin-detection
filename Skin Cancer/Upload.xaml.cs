@@ -1,12 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Net;
+using System.IO;
+using System.Text;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using RestSharp;
 
 namespace Skin_Cancer
 {
@@ -20,99 +21,55 @@ namespace Skin_Cancer
 
         async void Button_Clicked(object sender, EventArgs e)
         {
-            var result = await MediaPicker.PickPhotoAsync(new MediaPickerOptions
+            var photo = await MediaPicker.PickPhotoAsync(new MediaPickerOptions
             {
                 Title = "Choose Image"
             });
-            if (result != null)
+            if (photo != null)
             {
-                var stream = await result.OpenReadAsync();
+                // Save file to device so there is a path
+                var newFile = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
+                using (var stream = await photo.OpenReadAsync())
+                using (var newStream = File.OpenWrite(newFile))
+                    await stream.CopyToAsync(newStream);
 
-                resultImage.Source = ImageSource.FromStream(() => stream);
-
-                
-
-                var psi = new ProcessStartInfo();
-                //psi.FileName = @"C:\Users\kendr\anaconda3\python.exe";
-
-                var script = @"C:\Users\kendr\OneDrive\Desktop\skinny.py";
-                var argv = new List<Image>();
-                argv.Add(resultImage);
-
-                psi.Arguments = $"\"{script}\"\"{argv}\"";
-
-                psi.UseShellExecute = false;
-                psi.CreateNoWindow = true;
-                psi.RedirectStandardOutput = true;
-                psi.RedirectStandardError = true;
-
-                var errors = "";
-                var results = "";
-
-                using (var process = Process.Start(psi))
-                {
-                    errors = process.StandardError.ReadToEnd();
-                    results = process.StandardOutput.ReadToEnd();
-                }
-
-
-                Console.WriteLine("ERROS:");
-                Console.WriteLine(errors);
-                Console.WriteLine();
-                Console.WriteLine("Results:");
-                Console.WriteLine(results);
-
-
-
+                var client = new RestClient("http://ntntntnt.pythonanywhere.com/classifier");
+                client.Timeout = -1;
+                var request = new RestRequest(Method.POST);
+                request.AddFile("image", newFile);
+                IRestResponse response = client.Execute(request);
+                Console.WriteLine("test\n");
+                Console.WriteLine(response.Content);
             }
         }
 
         async void Button_Clicked_1(object sender, EventArgs e)
         {
-            var result = await MediaPicker.CapturePhotoAsync();
+            var photo = await MediaPicker.CapturePhotoAsync();
 
-            if (result != null)
+            if (photo != null)
             {
-                var stream = await result.OpenReadAsync();
+                // Save file to device so there is a path
+                var newFile = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
+                using (var stream = await photo.OpenReadAsync())
+                using (var newStream = File.OpenWrite(newFile))
+                    await stream.CopyToAsync(newStream);
 
-                resultImage.Source = ImageSource.FromStream(() => stream);
-
-                var psi = new ProcessStartInfo();
-                psi.FileName = @"C:\Users\kendr\anaconda3\python.exe";
-
-                var script = @"C:\Users\kendr\OneDrive\Desktop\skinny.py";
-                var argv = new List<Image>();
-                argv.Add(resultImage);
-
-                psi.Arguments = $"\"{script}\"\"{argv}\"";
-
-                psi.UseShellExecute = false;
-                psi.CreateNoWindow = true;
-                psi.RedirectStandardOutput = true;
-                psi.RedirectStandardError = true;
-
-                var errors = "";
-                var results = "";
-
-                using (var process = Process.Start(psi))
-                {
-                    errors = process.StandardError.ReadToEnd();
-                    results = process.StandardOutput.ReadToEnd();
-                }
-
-
-                Console.WriteLine("ERROS:");
-                Console.WriteLine(errors);
-                Console.WriteLine();
-                Console.WriteLine("Results:");
-                Console.WriteLine(results);
+                var client = new RestClient("http://ntntntnt.pythonanywhere.com/classifier");
+                client.Timeout = -1;
+                var request = new RestRequest(Method.POST);
+                request.AddFile("image", newFile);
+                IRestResponse response = client.Execute(request);
+                Console.WriteLine("test\n");
+                Console.WriteLine(response.Content);
             }
-
         }
 
         private void Button_Clicked_2(object sender, EventArgs e)
         {
 
         }
+
+
     }
 }

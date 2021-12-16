@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Skin_Cancer.Upload">
+
+    <ScrollView HeightRequest="300">
+        <StackLayout>
+            <Frame BackgroundColor="CornflowerBlue" Padding="24" CornerRadius="0">
+                <Label Text="Upload/Capture Images" HorizontalTextAlignment="Center"
+                   TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Button Text="Select Image From Camera Roll" Clicked="Button_Clicked" BackgroundColor="Gray" TextColor="Black"/>
+            <Button Text="Take Picture" Clicked="Button_Clicked_1" BackgroundColor="Gray" TextColor="Black"/>
+            <Image x:Name="resultImage"/>
+
+           
+        </StackLayout>
+    </ScrollView>
+    
+</ContentPage>

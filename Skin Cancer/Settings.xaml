@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Skin_Cancer.Settings">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="currentUserID" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Margin="0, 10, 0, 0" Opacity="0"/>
+
+            <Label Text="User Name: " FontSize="Large" VerticalOptions="Center" TextColor="Black" Margin="2, 22, 0, 0" FontAttributes="Bold"/>
+            <Entry x:Name="userName" VerticalOptions="Center"/>
+            <Label Text="Password: " FontSize="Large" VerticalOptions="Center" TextColor="Black" Margin="2, 22, 0, 0" FontAttributes="Bold"/>
+            <Entry x:Name="password" VerticalOptions="Center"/>
+            <Label Text="Email Address: " FontSize="Large" VerticalOptions="Center" TextColor="Black" Margin="2, 22, 0, 0" FontAttributes="Bold"/>
+            <Entry x:Name="email" VerticalOptions="Center"/>
+            <Label Text="Phone Number: " FontSize="Large" VerticalOptions="Center" TextColor="Black" Margin="2, 22, 0, 0" FontAttributes="Bold"/>
+            <Entry x:Name="phoneNumber" VerticalOptions="Center"/>
+
+            <Button Text="Update" 
+                    TextColor="Black" 
+                    VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" 
+                    BackgroundColor="Gray" WidthRequest="100" 
+                    Margin="0, 0, 0, 50"
+                    Clicked="Update_Information_Button" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
